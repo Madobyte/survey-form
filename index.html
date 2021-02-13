@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey!</title>
+  <meta name="description" content="Insert Description Here">
+  <meta name="author" content="Insert Author Here">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <div id="main-container">
+        <h1 id="title">Full-stack Survey!</h1>
+        <p id="description">Thank you for taking part in my survey!</p>
+        <div id="form-div">
+            <form action="submit" id="survey-form">
+                <label for="name" id="name-label">Full Name:</label>
+                <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+
+                <label for="email" id="email-label">Email address:</label>
+                <input type="email" id="email" placeholder="juan.delacruz@manila.com" required>
+
+                <label for="number" id="name-label">Age:</label>
+                <input type="number" id="number" min="10" max="85" placeholder="24">
+
+                <legend> What's your gender?
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="male" checked>Male
+                    </label>  
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </label> 
+                    <label for="dont-say">
+                        <input type="radio" name="gender" id="dont-say" value="dont-say">Rather not say
+                    </label> 
+                    <label for="others">
+                        <input type="radio" name="gender" id="others" value="others">Others
+                    </label>                 
+                </legend>  
+                
+                <p id="ethnicity">Ethnicity</p>
+                <select name="ethnicity" id="dropdown">
+                    <option value="asian">Asian</option>
+                    <option value="caucasian">Caucasian</option>
+                    <option value="african">African</option> 
+                    <option value="latin">Latin</option>     
+                </select>
+
+                <legend> What do you think I should study?
+                    <label for="html">
+                        <input type="checkbox" name="full-stack" id="html" value="html" checked>HTML
+                    </label>  
+                    <label for="css">
+                        <input type="checkbox" name="full-stack" id="css" value="css">CSS
+                    </label> 
+                    <label for="javascript">
+                        <input type="checkbox" name="full-stack" id="javascript" value="javascript">Javascript
+                    </label> 
+                    <label for="back-end">
+                        <input type="checkbox" name="full-stack" id="back-end" value="back-end">Back-end Applications
+                    </label>                 
+                </legend>  
+
+                <p id="textarea">Please write me your comments on my work!</p>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        
+                <button id="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+    <footer>
+        <p>Design by Marc B.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+  box-sizing: border-box;
+  max-width: 800px;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url("https://learn.g2.com/hubfs/iStock-1075599562.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+#title, #description{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+div#form-div{
+  background-color: hsla(250, 100%, 50%, 0.75);
+  border-radius: 1em;
+  padding: 20px;
+  margin-top: 20px;
+}
+label, legend, p{
+  color: white;
+  margin: 10px 0 10px 5px;
+  text-transform: uppercase;
+}
+input[type=text], input[type=email], input[type=number], select{
+  border-radius: 1em;
+  height: 2em;
+  padding: 0 20px;
+  border: none;
+}
+input::placeholder, select{
+  font-size: 16px;
+}
+select{
+  text-transform: uppercase;
+}
+#survey-form{
+  display: flex;
+  flex-direction: column;
+}
+legend label{
+  display: block;
+}
+textarea{
+  border-radius: 1em;
+  width: 99%;
+  margin: 10px auto;
+}
+#submit{
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 1em;
+  border: none;
+  background-color: yellowgreen;
+}
+#submit:hover{
+  background-color: yellow;
+}
+footer{
+  background-color: slategray;
+  height: 75px;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+footer p{
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px){
+  body{
+      width: 100vw;
+  }
+  div#form-div{
+      padding: 10px;
+      border-radius: 0;
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 320px){
+  body{
+      width: 90vw;
+  }
+  div#form-div{
+      padding: 10px;
+      border-radius: 1em;
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  body{
+      width: 90vw;
+  }
+  div#form-div{
+      padding: 20px;
+      border-radius: 1em;
+      margin-bottom: 20px;
+  }
+}
